@@ -19,12 +19,12 @@ N -1000 0 -1000 30 {lab=VDD}
 N -1000 30 -960 30 {lab=VDD}
 N -680 0 -680 30 {lab=VDD}
 N -680 30 -640 30 {lab=VDD}
-N -1160 70 -1160 100 {lab=0}
-N -1160 -30 -1160 10 {lab=VDD}
-N -1100 -160 -1100 -130 {lab=0}
-N -1100 -260 -1100 -220 {lab=CLK_REF}
-N -270 -160 -270 -130 {lab=0}
-N -270 -270 -270 -220 {lab=CLK_FB}
+N 70 -180 70 -150 {lab=0}
+N 70 -280 70 -240 {lab=VDD}
+N -270 50 -270 80 {lab=0}
+N -270 -50 -270 -10 {lab=CLK_REF}
+N 20 50 20 80 {lab=0}
+N 20 -60 20 -10 {lab=CLK_FB}
 N -360 -230 -360 -190 {lab=0}
 N -400 -230 -360 -230 {lab=0}
 N -740 -230 -740 -190 {lab=0}
@@ -52,17 +52,27 @@ C {lab_pin.sym} -460 -320 0 1 {name=p6 sig_type=std_logic lab=CLK_REF}
 C {gnd.sym} -740 -200 0 0 {name=l1 lab=0}
 C {lab_pin.sym} -1000 0 2 1 {name=p10 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} -680 0 2 1 {name=p11 sig_type=std_logic lab=VDD}
-C {gnd.sym} -1160 100 0 0 {name=l2 lab=0}
-C {lab_pin.sym} -1160 -30 0 1 {name=p12 sig_type=std_logic lab=VDD}
-C {vsource.sym} -1160 40 0 0 {name=V1 value=3.3 savecurrent=true}
-C {gnd.sym} -1100 -130 0 0 {name=l3 lab=0}
-C {lab_pin.sym} -1100 -260 0 0 {name=p13 sig_type=std_logic lab=CLK_REF}
-C {vsource.sym} -1100 -190 0 1 {name=V_CLK_REF value="pulse 0 3.3 0 100p 100p 50n 100n" savecurrent=true}
-C {gnd.sym} -270 -130 0 0 {name=l4 lab=0}
-C {lab_pin.sym} -270 -270 0 1 {name=p14 sig_type=std_logic lab=CLK_FB}
-C {vsource.sym} -270 -190 0 0 {name=V_CLK_FB value="pulse 0 3.3 20n 100p 100p 50n 100n" savecurrent=true}
+C {gnd.sym} 70 -150 0 0 {name=l2 lab=0}
+C {lab_pin.sym} 70 -280 0 1 {name=p12 sig_type=std_logic lab=VDD}
+C {vsource.sym} 70 -210 0 0 {name=V1 value=3.3 savecurrent=true}
+C {gnd.sym} -270 80 0 1 {name=l3 lab=0}
+C {lab_pin.sym} -270 -50 0 1 {name=p13 sig_type=std_logic lab=CLK_REF}
+C {vsource.sym} -270 20 0 0 {name=V_CLK_REF value="pulse 0 3.3 0 100p 100p 50n 100n" savecurrent=true}
+C {gnd.sym} 20 80 0 0 {name=l4 lab=0}
+C {lab_pin.sym} 20 -60 0 1 {name=p14 sig_type=std_logic lab=CLK_FB}
+C {vsource.sym} 20 20 0 0 {name=V_CLK_FB value="pulse 0 3.3 20n 100p 100p 50n 100n" savecurrent=true}
 C {lab_pin.sym} -990 -230 2 1 {name=p17 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} -620 -230 2 1 {name=p18 sig_type=std_logic lab=VDD}
 C {gnd.sym} -360 -190 0 0 {name=l5 lab=0}
 C {gnd.sym} -420 60 0 0 {name=l6 lab=0}
 C {gnd.sym} -750 60 0 0 {name=l7 lab=0}
+C {code_shown.sym} -310 -340 0 0 {name=NGSPICE only_toplevel=true value=".include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+
+.option savecurrents
+
+.control
+save all
+tran 100p 500n
+run
+.endc" }
