@@ -5,7 +5,6 @@ V {}
 S {}
 F {}
 E {}
-L 4 -10 -40 40 -40 {}
 N 80 -10 80 40 {lab=#net1}
 N 80 270 80 320 {lab=#net2}
 N 320 -10 320 40 {lab=#net3}
@@ -78,6 +77,7 @@ N 790 330 830 330 {lab=GND}
 N 750 50 790 50 {lab=VDD}
 N 790 -40 790 50 {lab=VDD}
 N 790 -40 820 -40 {lab=VDD}
+N -10 -40 40 -40 {lab=A}
 C {symbols/pfet_03v3.sym} 60 -40 0 0 {name=M1
 L=0.28u
 W=0.22u
@@ -199,8 +199,6 @@ C {lab_pin.sym} -10 350 0 0 {name=p6 sig_type=std_logic lab=A}
 C {lab_pin.sym} 410 350 0 1 {name=p7 sig_type=std_logic lab=B}
 C {lab_pin.sym} -10 240 0 0 {name=p8 sig_type=std_logic lab=B_bar}
 C {lab_pin.sym} 410 240 0 1 {name=p9 sig_type=std_logic lab=A_bar}
-C {ipin.sym} 240 -160 0 1 {name=p10 lab=VDD}
-C {ipin.sym} 240 480 0 1 {name=p11 lab=GND}
 C {ipin.sym} -540 150 0 0 {name=p12 lab=A}
 C {symbols/pfet_03v3.sym} -400 50 0 0 {name=M9
 L=0.28u
@@ -275,3 +273,5 @@ C {lab_pin.sym} -310 -40 0 1 {name=p14 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} -300 330 0 1 {name=p15 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 820 -40 0 1 {name=p28 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 830 330 0 1 {name=p29 sig_type=std_logic lab=GND}
+C {iopin.sym} 240 -160 0 0 {name=p10 lab=VDD}
+C {iopin.sym} 240 480 0 0 {name=p11 lab=GND}
