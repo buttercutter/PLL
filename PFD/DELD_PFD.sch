@@ -19,8 +19,8 @@ N -1000 0 -1000 30 {lab=VDD}
 N -1000 30 -960 30 {lab=VDD}
 N -680 0 -680 30 {lab=VDD}
 N -680 30 -640 30 {lab=VDD}
-N 70 -180 70 -150 {lab=0}
-N 70 -280 70 -240 {lab=VDD}
+N 220 -160 220 -130 {lab=0}
+N 220 -260 220 -220 {lab=VDD}
 N -270 50 -270 80 {lab=0}
 N -270 -50 -270 -10 {lab=CLK_REF}
 N 20 50 20 80 {lab=0}
@@ -52,9 +52,9 @@ C {lab_pin.sym} -460 -320 0 1 {name=p6 sig_type=std_logic lab=CLK_REF}
 C {gnd.sym} -740 -200 0 0 {name=l1 lab=0}
 C {lab_pin.sym} -1000 0 2 1 {name=p10 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} -680 0 2 1 {name=p11 sig_type=std_logic lab=VDD}
-C {gnd.sym} 70 -150 0 0 {name=l2 lab=0}
-C {lab_pin.sym} 70 -280 0 1 {name=p12 sig_type=std_logic lab=VDD}
-C {vsource.sym} 70 -210 0 0 {name=V1 value=3.3 savecurrent=true}
+C {gnd.sym} 220 -130 0 0 {name=l2 lab=0}
+C {lab_pin.sym} 220 -260 0 1 {name=p12 sig_type=std_logic lab=VDD}
+C {vsource.sym} 220 -190 0 0 {name=V1 value=3.3 savecurrent=true}
 C {gnd.sym} -270 80 0 1 {name=l3 lab=0}
 C {lab_pin.sym} -270 -50 0 1 {name=p13 sig_type=std_logic lab=CLK_REF}
 C {vsource.sym} -270 20 0 0 {name=V_CLK_REF value="pulse 0 3.3 0 100p 100p 50n 100n" savecurrent=true}
@@ -74,5 +74,5 @@ C {code_shown.sym} -310 -340 0 0 {name=NGSPICE only_toplevel=true value=".includ
 .control
 save all
 tran 100p 500n
-run
+plot v(CLK_REF)+4 v(CLK_FB)+4 v(UP) v(DOWN)
 .endc" }
