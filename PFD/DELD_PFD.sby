@@ -1,0 +1,29 @@
+[tasks]
+proof
+cover
+
+[options]
+proof: mode prove
+proof: depth 60
+
+cover: mode cover
+cover: depth 20
+cover: append 20
+
+multiclock on
+
+[engines]
+smtbmc yices
+# smtbmc boolector
+# abc pdr
+# aiger avy
+# aiger suprove
+
+[script]
+read_verilog -formal DELD_PFD.v
+
+prep -top DELD_PFD
+opt_merge -share_all
+
+[files]
+./DELD_PFD.v
