@@ -75,35 +75,37 @@ wire F2 = ~(~clk_fb & E2);  // NAND gate #4
 // are node C2 and F2 respectively ?
 
 
-reg UP1, UP2;
+reg UP1, UP2_before_inverter;
+wire UP2 = ~UP2_before_inverter;
 
 always @(posedge reset or negedge clk_ref)
 begin
     if (reset)
     begin
         UP1 <= 0;
-        UP2 <= 0;
+        UP2_before_inverter <= 0;
     end
 
     else begin
         UP1 <= C1;  // D-flipflop #6 in orange color
-        UP2 <= ~C2;  // D-flipflop #6 in green color
+        UP2_before_inverter <= C2;  // D-flipflop #6 in green color
     end
 end
 
-reg DN1, DN2;
+reg DN1, DN2_before_inverter;
+wire DN2 = ~DN2_before_inverter;
 
 always @(posedge reset or negedge clk_fb)
 begin
     if(reset)
     begin
         DN1 <= 0;
-        DN2 <= 0;
+        DN2_before_inverter <= 0;
     end
 
     else begin
         DN1 <= F1;  // D-flipflop #8 in orange color
-        DN2 <= ~F2;  // D-flipflop #8 in green color
+        DN2_before_inverter <= F2;  // D-flipflop #8 in green color
     end
 end
 
@@ -133,10 +135,31 @@ end
 initial assume(reset);
 initial up = 0;
 initial dn = 0;
+initial UP2 = 0;
+initial DN2 = 0;
+
+always @($global_clock)
+begin
+    // clk_ref is generated from crystal oscillator
+    // so duty cycle ratio will be around 50 percent
+    assume($past(clk_ref) == ~clk_ref);
+end
 
 always @($global_clock)
 begin
     cover(up);
+end
+
+`endif
+
+
+`ifdef FORMAL
+
+always @($global_clock)
+begin
+    // the charge pump must not receive constantly turned-on
+    // 'up' and 'dn' signals
+    if($past(up) & $past(dn)) assert(~(up & dn));
 end
 
 `endif
