@@ -57,7 +57,7 @@ C {lab_pin.sym} 220 -260 0 1 {name=p12 sig_type=std_logic lab=VDD}
 C {vsource.sym} 220 -190 0 0 {name=V1 value=3.3 savecurrent=true}
 C {gnd.sym} -270 80 0 1 {name=l3 lab=0}
 C {lab_pin.sym} -270 -50 0 1 {name=p13 sig_type=std_logic lab=CLK_REF}
-C {vsource.sym} -270 20 0 0 {name=V_CLK_REF value="pulse 0 3.3 0 100p 100p 50n 100n" savecurrent=true}
+C {vsource.sym} -270 20 0 0 {name=V_CLK_REF value="pulse 0 3.3 0 100p 100p 70n 140n" savecurrent=true}
 C {gnd.sym} 20 80 0 0 {name=l4 lab=0}
 C {lab_pin.sym} 20 -60 0 1 {name=p14 sig_type=std_logic lab=CLK_FB}
 C {vsource.sym} 20 20 0 0 {name=V_CLK_FB value="pulse 0 3.3 20n 100p 100p 50n 100n" savecurrent=true}
