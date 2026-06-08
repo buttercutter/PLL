@@ -146,7 +146,7 @@ N 1680 870 1680 900 {lab=GND}
 N 1130 900 1130 930 {lab=GND}
 N 1010 550 1070 550 {lab=VDD}
 N 590 590 650 590 {lab=VDD}
-N 540 690 600 690 {lab=VDD}
+N 530 690 590 690 {lab=VDD}
 N 1010 690 1070 690 {lab=VDD}
 N 730 830 770 830 {lab=GND}
 N 590 800 630 800 {lab=GND}
@@ -619,7 +619,7 @@ C {lab_pin.sym} 1520 460 0 0 {name=p33 sig_type=std_logic lab=CLK_FB_bar}
 C {lab_pin.sym} 1680 460 0 0 {name=p34 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 1130 930 0 0 {name=p35 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 1070 550 0 1 {name=p36 sig_type=std_logic lab=VDD}
-C {lab_pin.sym} 540 690 0 0 {name=p37 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 530 690 0 0 {name=p37 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 650 590 0 1 {name=p38 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 1070 690 0 1 {name=p39 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 730 830 0 0 {name=p40 sig_type=std_logic lab=GND}
