@@ -18,7 +18,7 @@ N 620 -160 660 -160 {lab=GND}
 N 480 -450 620 -450 {lab=Y}
 N 480 -490 480 -450 {lab=Y}
 N 480 -570 480 -550 {lab=VDD}
-N 710 -520 770 -520 {lab=VDD}
+N 700 -520 760 -520 {lab=VDD}
 N 620 -450 760 -450 {lab=Y}
 N 760 -490 760 -450 {lab=Y}
 N 760 -570 760 -550 {lab=VDD}
@@ -93,7 +93,7 @@ C {ipin.sym} 840 -520 0 1 {name=p13 lab=B}
 C {lab_pin.sym} 550 -230 0 0 {name=p2 sig_type=std_logic lab=B}
 C {lab_pin.sym} 430 -520 0 0 {name=p14 sig_type=std_logic hide=true lab=A}
 C {lab_pin.sym} 810 -520 0 1 {name=p15 sig_type=std_logic hide=true lab=B}
-C {lab_pin.sym} 710 -520 0 0 {name=p6 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 700 -520 0 0 {name=p6 sig_type=std_logic lab=VDD}
 C {iopin.sym} 660 -630 0 0 {name=p8 lab=VDD}
 C {lab_pin.sym} 540 -520 0 1 {name=p10 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 620 -590 0 0 {name=p11 sig_type=std_logic lab=VDD}
