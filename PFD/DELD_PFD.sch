@@ -75,7 +75,7 @@ C {code_shown.sym} -310 -340 0 0 {name=NGSPICE only_toplevel=true value=".includ
 save all
 tran 100p 500n
 plot v(CLK_REF)+4 v(CLK_FB)+4 v(UP) v(DOWN)
-plot v(x3.NL1_in)+4 v(x3.NL2_in)+4 v(x3.reset_out) v(UP1)
+plot v(x3.NL1_in)+4 v(x3.NL2_in)+4 v(x3.reset_out) v(UP1) v(DN1)
 .endc" }
 C {lab_pin.sym} -900 -90 0 0 {name=p7 sig_type=std_logic hide=true lab=UP1}
 C {lab_pin.sym} -840 -90 0 1 {name=p8 sig_type=std_logic hide=true lab=UP2}
