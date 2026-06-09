@@ -715,3 +715,5 @@ C {iopin.sym} 2200 320 0 0 {name=p25 lab=GND}
 C {lab_wire.sym} 910 10 0 1 {name=p67 sig_type=std_logic lab=NL1_in}
 C {lab_wire.sym} 1580 10 0 1 {name=p68 sig_type=std_logic lab=NL2_in}
 C {lab_wire.sym} 850 330 0 1 {name=p69 sig_type=std_logic lab=reset_out}
+C {lab_wire.sym} 910 750 0 1 {name=p70 sig_type=std_logic lab=NL3_in}
+C {lab_wire.sym} 1580 750 0 1 {name=p71 sig_type=std_logic lab=NL4_in}

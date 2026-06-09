@@ -66,7 +66,7 @@ C {lab_pin.sym} -620 -230 2 1 {name=p18 sig_type=std_logic lab=VDD}
 C {gnd.sym} -360 -190 0 0 {name=l5 lab=0}
 C {gnd.sym} -420 60 0 0 {name=l6 lab=0}
 C {gnd.sym} -750 60 0 0 {name=l7 lab=0}
-C {code_shown.sym} -310 -340 0 0 {name=NGSPICE only_toplevel=true value=".include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+C {code_shown.sym} -330 -450 0 0 {name=NGSPICE only_toplevel=true value=".include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
 
 .option savecurrents
@@ -74,7 +74,7 @@ C {code_shown.sym} -310 -340 0 0 {name=NGSPICE only_toplevel=true value=".includ
 .control
 save all
 tran 100p 500n
-plot v(CLK_REF)+4 v(CLK_FB)+4 v(UP) v(DOWN)
+plot v(x3.NL3_in)+8 v(x3.NL4_in)+8 v(CLK_REF)+4 v(CLK_FB)+4 v(UP) v(DOWN)
 plot v(x3.NL1_in)+4 v(x3.NL2_in)+4 v(x3.reset_out) v(UP1) v(DN1)
 .endc" }
 C {lab_pin.sym} -900 -90 0 0 {name=p7 sig_type=std_logic hide=true lab=UP1}
