@@ -78,6 +78,7 @@ N 750 50 790 50 {lab=VDD}
 N 790 -40 790 50 {lab=VDD}
 N 790 -40 820 -40 {lab=VDD}
 N -10 -40 40 -40 {lab=A}
+N 80 20 320 20 {lab=Y}
 C {symbols/pfet_03v3.sym} 60 -40 0 0 {name=M1
 L=0.28u
 W=0.22u
