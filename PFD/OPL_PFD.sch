@@ -795,3 +795,8 @@ C {lab_pin.sym} 570 980 0 1 {name=p78 sig_type=std_logic lab=GND}
 C {iopin.sym} 1800 870 0 0 {name=p79 lab=VDD}
 C {lab_pin.sym} 1750 870 0 0 {name=p23 sig_type=std_logic lab=VDD}
 C {iopin.sym} 1800 900 0 0 {name=p24 lab=GND}
+C {lab_wire.sym} 290 460 0 1 {name=p25 sig_type=std_logic lab=NL1_in}
+C {lab_wire.sym} 960 440 0 1 {name=p80 sig_type=std_logic lab=NL2_in}
+C {lab_wire.sym} 290 1200 0 1 {name=p81 sig_type=std_logic lab=NL3_in}
+C {lab_wire.sym} 960 1180 0 1 {name=p82 sig_type=std_logic lab=NL4_in}
+C {lab_wire.sym} 190 890 0 1 {name=p83 sig_type=std_logic lab=reset_out}
