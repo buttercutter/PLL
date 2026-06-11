@@ -30,8 +30,8 @@ reg B1, B2;
 always @(*)
 begin
     if(clk_ref) begin
-        B1 <= A1;  // D-flipflop #5 in orange color
-        B2 <= A2;  // D-flipflop #5 in green color
+        B1 <= A1;  // Latch #5 in orange color
+        B2 <= A2;  // Latch #5 in green color
     end
 end
 
@@ -40,8 +40,8 @@ reg E1, E2;
 always @(*)
 begin
     if(clk_fb) begin
-        E1 <= D1;  // D-flipflop #7 in orange color
-        E2 <= D2;  // D-flipflop #7 in green color
+        E1 <= D1;  // Latch #7 in orange color
+        E2 <= D2;  // Latch #7 in green color
     end
 end
 
@@ -70,8 +70,8 @@ wire UP2 = ~UP2_before_inverter;
 always @(*)
 begin
     if(~clk_ref) begin
-        UP1 <= C1;  // D-flipflop #6 in orange color
-        UP2_before_inverter <= C2;  // D-flipflop #6 in green color
+        UP1 <= C1;  // Latch #6 in orange color
+        UP2_before_inverter <= C2;  // Latch #6 in green color
     end
 end
 
@@ -81,8 +81,8 @@ wire DN2 = ~DN2_before_inverter;
 always @(*)
 begin
     if(~clk_fb) begin
-        DN1 <= F1;  // D-flipflop #8 in orange color
-        DN2_before_inverter <= F2;  // D-flipflop #8 in green color
+        DN1 <= F1;  // Latch #8 in orange color
+        DN2_before_inverter <= F2;  // Latch #8 in green color
     end
 end
 
