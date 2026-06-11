@@ -74,12 +74,12 @@ N 840 400 840 440 {lab=#net6}
 N 660 620 900 620 {lab=CLK_REF_bar}
 N 620 650 620 720 {lab=GND}
 N 900 510 900 620 {lab=CLK_REF_bar}
-N 1280 530 1280 610 {lab=UP2}
-N 1280 410 1280 470 {lab=VDD}
-N 1280 670 1280 720 {lab=GND}
-N 1280 500 1340 500 {lab=VDD}
-N 1280 640 1340 640 {lab=GND}
-N 1280 570 1450 570 {lab=UP2}
+N 1280 410 1280 490 {lab=UP2}
+N 1280 290 1280 350 {lab=VDD}
+N 1280 550 1280 600 {lab=GND}
+N 1280 380 1340 380 {lab=VDD}
+N 1280 520 1340 520 {lab=GND}
+N 1280 450 1450 450 {lab=UP2}
 N 1700 620 1730 620 {lab=CLK_FB}
 N 1800 580 1800 660 {lab=CLK_FB_bar}
 N 1800 460 1800 520 {lab=VDD}
@@ -143,19 +143,18 @@ N 660 1360 900 1360 {lab=CLK_FB_bar}
 N 620 1390 620 1460 {lab=GND}
 N 620 1280 620 1330 {lab=#net7}
 N 900 1250 900 1360 {lab=CLK_FB_bar}
-N 1280 1270 1280 1350 {lab=DN2}
-N 1280 1150 1280 1210 {lab=VDD}
-N 1280 1410 1280 1460 {lab=GND}
-N 1280 1240 1340 1240 {lab=VDD}
-N 1280 1380 1340 1380 {lab=GND}
-N 1200 1240 1200 1310 {lab=#net8}
-N 1200 1240 1240 1240 {lab=#net8}
-N 1200 1310 1200 1380 {lab=#net8}
-N 1200 1380 1240 1380 {lab=#net8}
-N 1280 1310 1450 1310 {lab=DN2}
+N 1280 1150 1280 1230 {lab=DN2}
+N 1280 1030 1280 1090 {lab=VDD}
+N 1280 1290 1280 1340 {lab=GND}
+N 1280 1120 1340 1120 {lab=VDD}
+N 1280 1260 1340 1260 {lab=GND}
+N 1200 1120 1200 1190 {lab=#net8}
+N 1200 1120 1240 1120 {lab=#net8}
+N 1200 1190 1200 1260 {lab=#net8}
+N 1200 1260 1240 1260 {lab=#net8}
+N 1280 1190 1450 1190 {lab=DN2}
 N 540 800 570 800 {lab=VDD}
 N 540 980 570 980 {lab=GND}
-N 1410 570 1410 860 {lab=UP2}
 N 620 440 840 440 {lab=#net6}
 N 620 400 620 440 {lab=#net6}
 N 620 440 620 480 {lab=#net6}
@@ -169,14 +168,14 @@ N 620 1180 620 1220 {lab=#net10}
 N 620 1140 620 1180 {lab=#net10}
 N 1750 870 1800 870 {lab=VDD}
 N 1060 400 1060 480 {lab=#net11}
-N 1200 500 1240 500 {lab=#net12}
-N 620 540 620 590 {lab=#net13}
-N 1060 560 1200 560 {lab=#net12}
-N 1060 560 1060 590 {lab=#net12}
-N 1060 540 1060 560 {lab=#net12}
-N 1200 500 1200 560 {lab=#net12}
-N 1200 560 1200 640 {lab=#net12}
-N 1200 640 1240 640 {lab=#net12}
+N 1200 380 1240 380 {lab=#net11}
+N 620 540 620 590 {lab=#net12}
+N 1060 440 1200 440 {lab=#net11}
+N 1060 560 1060 590 {lab=#net13}
+N 1060 540 1060 560 {lab=#net13}
+N 1200 380 1200 440 {lab=#net11}
+N 1200 440 1200 520 {lab=#net11}
+N 1200 520 1240 520 {lab=#net11}
 N -30 1200 190 1200 {lab=#net14}
 N -30 1200 -30 1220 {lab=#net14}
 N -30 1180 -30 1200 {lab=#net14}
@@ -192,22 +191,23 @@ N 390 1280 390 1330 {lab=#net16}
 N 960 1180 960 1360 {lab=#net10}
 N 960 1110 960 1180 {lab=#net10}
 N 960 1110 1020 1110 {lab=#net10}
-N 1060 1140 1060 1220 {lab=#net17}
+N 1060 1140 1060 1220 {lab=#net8}
 N 840 1180 960 1180 {lab=#net10}
 N 620 1180 840 1180 {lab=#net10}
 N 960 1360 1020 1360 {lab=#net10}
-N 1060 1300 1200 1300 {lab=#net8}
-N 1060 1300 1060 1330 {lab=#net8}
-N 1060 1280 1060 1300 {lab=#net8}
+N 1060 1180 1200 1180 {lab=#net8}
+N 1060 1300 1060 1330 {lab=#net17}
+N 1060 1280 1060 1300 {lab=#net17}
 N 190 1180 190 1200 {lab=#net14}
 N 540 1110 540 1250 {lab=#net9}
 N 390 1180 540 1180 {lab=#net9}
 N 840 1140 840 1180 {lab=#net10}
 N 630 860 1410 860 {lab=UP2}
 N 630 920 1410 920 {lab=DN2}
-N 1410 920 1410 1310 {lab=DN2}
 N 840 440 960 440 {lab=#net6}
 N 900 510 1020 510 {lab=CLK_REF_bar}
+N 1410 450 1410 860 {lab=UP2}
+N 1410 920 1410 1190 {lab=DN2}
 C {symbols/pfet_03v3.sym} -50 410 0 0 {name=M1
 L=0.28u
 W=0.22u
@@ -340,7 +340,7 @@ C {lab_pin.sym} 580 620 0 0 {name=p70 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 1120 620 0 1 {name=p71 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 1120 510 0 1 {name=p72 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 1120 370 0 1 {name=p73 sig_type=std_logic lab=VDD}
-C {opin.sym} 1450 570 0 0 {name=p74 lab=UP2}
+C {opin.sym} 1450 450 0 0 {name=p74 lab=UP2}
 C {lab_pin.sym} 1750 900 0 0 {name=p26 sig_type=std_logic lab=GND}
 C {ipin.sym} 1800 940 0 1 {name=p27 lab=CLK_FB}
 C {lab_pin.sym} 1750 940 0 0 {name=p28 sig_type=std_logic lab=CLK_FB}
@@ -421,7 +421,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 1260 500 0 0 {name=M15
+C {symbols/pfet_03v3.sym} 1260 380 0 0 {name=M15
 L=0.28u
 W=0.22u
 nf=1
@@ -435,9 +435,9 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} 1340 640 0 1 {name=p5 sig_type=std_logic lab=GND}
-C {lab_pin.sym} 1340 500 0 1 {name=p6 sig_type=std_logic lab=VDD}
-C {symbols/nfet_03v3.sym} 1260 640 0 0 {name=M16
+C {lab_pin.sym} 1340 520 0 1 {name=p5 sig_type=std_logic lab=GND}
+C {lab_pin.sym} 1340 380 0 1 {name=p6 sig_type=std_logic lab=VDD}
+C {symbols/nfet_03v3.sym} 1260 520 0 0 {name=M16
 L=0.28u
 W=0.22u
 nf=1
@@ -451,8 +451,8 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} 1280 410 0 1 {name=p7 sig_type=std_logic lab=VDD}
-C {lab_pin.sym} 1280 720 0 1 {name=p8 sig_type=std_logic lab=GND}
+C {lab_pin.sym} 1280 290 0 1 {name=p7 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 1280 600 0 1 {name=p8 sig_type=std_logic lab=GND}
 C {symbols/pfet_03v3.sym} 1780 550 0 0 {name=M17
 L=0.28u
 W=0.22u
@@ -667,7 +667,7 @@ C {lab_pin.sym} 580 1360 0 0 {name=p42 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 1120 1360 0 1 {name=p43 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 1120 1250 0 1 {name=p44 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 1120 1110 0 1 {name=p45 sig_type=std_logic lab=VDD}
-C {opin.sym} 1450 1310 0 0 {name=p46 lab=DN2}
+C {opin.sym} 1450 1190 0 0 {name=p46 lab=DN2}
 C {symbols/pfet_03v3.sym} 210 1150 0 1 {name=M29
 L=0.28u
 W=0.22u
@@ -743,7 +743,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 1260 1240 0 0 {name=M34
+C {symbols/pfet_03v3.sym} 1260 1120 0 0 {name=M34
 L=0.28u
 W=0.22u
 nf=1
@@ -757,9 +757,9 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} 1340 1380 0 1 {name=p64 sig_type=std_logic lab=GND}
-C {lab_pin.sym} 1340 1240 0 1 {name=p69 sig_type=std_logic lab=VDD}
-C {symbols/nfet_03v3.sym} 1260 1380 0 0 {name=M35
+C {lab_pin.sym} 1340 1260 0 1 {name=p64 sig_type=std_logic lab=GND}
+C {lab_pin.sym} 1340 1120 0 1 {name=p69 sig_type=std_logic lab=VDD}
+C {symbols/nfet_03v3.sym} 1260 1260 0 0 {name=M35
 L=0.28u
 W=0.22u
 nf=1
@@ -773,8 +773,8 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} 1280 1150 0 1 {name=p75 sig_type=std_logic lab=VDD}
-C {lab_pin.sym} 1280 1460 0 1 {name=p76 sig_type=std_logic lab=GND}
+C {lab_pin.sym} 1280 1030 0 1 {name=p75 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 1280 1340 0 1 {name=p76 sig_type=std_logic lab=GND}
 C {symbols/nfet_03v3.sym} -10 1250 0 1 {name=M36
 L=0.28u
 W=0.22u
