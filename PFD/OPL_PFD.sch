@@ -208,6 +208,12 @@ N 840 440 960 440 {lab=NL2_in}
 N 900 510 1020 510 {lab=CLK_REF_bar}
 N 1410 450 1410 860 {lab=UP2}
 N 1410 920 1410 1190 {lab=DN2}
+N 1450 450 1540 450 {lab=UP2}
+N 1450 1190 1560 1190 {lab=DN2}
+N 1480 290 1480 350 {lab=VDD}
+N 1480 410 1480 450 {lab=UP2}
+N 1490 1030 1490 1090 {lab=VDD}
+N 1490 1150 1490 1190 {lab=DN2}
 C {symbols/pfet_03v3.sym} -50 410 0 0 {name=M1
 L=0.28u
 W=0.22u
@@ -340,7 +346,7 @@ C {lab_pin.sym} 580 620 0 0 {name=p70 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 1120 620 0 1 {name=p71 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 1120 510 0 1 {name=p72 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 1120 370 0 1 {name=p73 sig_type=std_logic lab=VDD}
-C {opin.sym} 1450 450 0 0 {name=p74 lab=UP2}
+C {opin.sym} 1540 450 0 0 {name=p74 lab=UP2}
 C {lab_pin.sym} 1750 900 0 0 {name=p26 sig_type=std_logic lab=GND}
 C {ipin.sym} 1800 940 0 1 {name=p27 lab=CLK_FB}
 C {lab_pin.sym} 1750 940 0 0 {name=p28 sig_type=std_logic lab=CLK_FB}
@@ -425,7 +431,7 @@ C {symbols/pfet_03v3.sym} 1260 380 0 0 {name=M15
 L=0.28u
 W=0.22u
 nf=1
-m=3
+m=6
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -441,7 +447,7 @@ C {symbols/nfet_03v3.sym} 1260 520 0 0 {name=M16
 L=0.28u
 W=0.22u
 nf=1
-m=1
+m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -667,7 +673,7 @@ C {lab_pin.sym} 580 1360 0 0 {name=p42 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 1120 1360 0 1 {name=p43 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 1120 1250 0 1 {name=p44 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 1120 1110 0 1 {name=p45 sig_type=std_logic lab=VDD}
-C {opin.sym} 1450 1190 0 0 {name=p46 lab=DN2}
+C {opin.sym} 1560 1190 0 0 {name=p46 lab=DN2}
 C {symbols/pfet_03v3.sym} 210 1150 0 1 {name=M29
 L=0.28u
 W=0.22u
@@ -747,7 +753,7 @@ C {symbols/pfet_03v3.sym} 1260 1120 0 0 {name=M34
 L=0.28u
 W=0.22u
 nf=1
-m=3
+m=6
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -763,7 +769,7 @@ C {symbols/nfet_03v3.sym} 1260 1260 0 0 {name=M35
 L=0.28u
 W=0.22u
 nf=1
-m=1
+m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -800,3 +806,15 @@ C {lab_wire.sym} 960 440 0 1 {name=p80 sig_type=std_logic lab=NL2_in}
 C {lab_wire.sym} 290 1200 0 1 {name=p81 sig_type=std_logic lab=NL3_in}
 C {lab_wire.sym} 960 1180 0 1 {name=p82 sig_type=std_logic lab=NL4_in}
 C {lab_wire.sym} 190 890 0 1 {name=p83 sig_type=std_logic lab=reset_out}
+C {res.sym} 1480 380 0 0 {name=R1
+value=10k
+footprint=1206
+device=resistor
+m=1}
+C {lab_pin.sym} 1480 290 0 1 {name=p84 sig_type=std_logic lab=VDD}
+C {res.sym} 1490 1120 0 0 {name=R2
+value=10k
+footprint=1206
+device=resistor
+m=1}
+C {lab_pin.sym} 1490 1030 0 1 {name=p85 sig_type=std_logic lab=VDD}
