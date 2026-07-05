@@ -73,7 +73,7 @@ C {code_shown.sym} -330 -450 0 0 {name=NGSPICE only_toplevel=true value=".includ
 
 .control
 save all
-tran 10p 1u
+tran 10p 1.5u
 plot v(x3.NL3_in)+8 v(x3.NL4_in)+8 v(CLK_REF)+4 v(CLK_FB)+4 v(UP) v(DOWN)
 plot v(x3.NL1_in)+4 v(x3.NL2_in)+4 v(x3.reset_out) v(UP1) v(DN1)
 plot v(CLK_REF)+12 v(CLK_FB)+12 v(x4.NL3_in)+8 v(x4.NL4_in)+8 v(x4.NL1_in)+4 v(x4.NL2_in)+4 v(x4.reset_out) v(UP2) v(DN2)
