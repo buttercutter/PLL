@@ -210,10 +210,14 @@ N 1410 450 1410 860 {lab=UP2}
 N 1410 920 1410 1190 {lab=DN2}
 N 1450 450 1540 450 {lab=UP2}
 N 1450 1190 1560 1190 {lab=DN2}
-N 1480 290 1480 350 {lab=VDD}
-N 1480 410 1480 450 {lab=UP2}
-N 1490 1030 1490 1090 {lab=VDD}
-N 1490 1150 1490 1190 {lab=DN2}
+N 1460 380 1510 380 {lab=VDD}
+N 1510 410 1510 450 {lab=UP2}
+N 1510 290 1510 350 {lab=VDD}
+N 1550 380 1580 380 {lab=GND}
+N 1480 1120 1530 1120 {lab=VDD}
+N 1530 1150 1530 1190 {lab=UP2}
+N 1530 1030 1530 1090 {lab=VDD}
+N 1570 1120 1600 1120 {lab=GND}
 C {symbols/pfet_03v3.sym} -50 410 0 0 {name=M1
 L=0.28u
 W=0.22u
@@ -806,15 +810,37 @@ C {lab_wire.sym} 960 440 0 1 {name=p80 sig_type=std_logic lab=NL2_in}
 C {lab_wire.sym} 290 1200 0 1 {name=p81 sig_type=std_logic lab=NL3_in}
 C {lab_wire.sym} 960 1180 0 1 {name=p82 sig_type=std_logic lab=NL4_in}
 C {lab_wire.sym} 190 890 0 1 {name=p83 sig_type=std_logic lab=reset_out}
-C {res.sym} 1480 380 0 0 {name=R1
-value=10k
-footprint=1206
-device=resistor
-m=1}
-C {lab_pin.sym} 1480 290 0 1 {name=p84 sig_type=std_logic lab=VDD}
-C {res.sym} 1490 1120 0 0 {name=R2
-value=10k
-footprint=1206
-device=resistor
-m=1}
-C {lab_pin.sym} 1490 1030 0 1 {name=p85 sig_type=std_logic lab=VDD}
+C {symbols/pfet_03v3.sym} 1530 380 0 1 {name=M37
+L=0.28u
+W=1u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {lab_pin.sym} 1510 290 0 0 {name=p84 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 1460 380 0 0 {name=p86 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 1580 380 0 1 {name=p87 sig_type=std_logic lab=GND}
+C {symbols/pfet_03v3.sym} 1550 1120 0 1 {name=M38
+L=0.28u
+W=1u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {lab_pin.sym} 1530 1030 0 0 {name=p85 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 1480 1120 0 0 {name=p88 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 1600 1120 0 1 {name=p89 sig_type=std_logic lab=GND}
